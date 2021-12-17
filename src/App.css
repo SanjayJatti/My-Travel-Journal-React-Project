@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Kalam&family=Montserrat&family=Poppins:ital@0;1&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+.header {
+  background-color: #09a7a1;
+  padding: 20px 0;
+}
+body {
+  margin: auto;
+  min-height: 100vh;
+  width: 100%;
+  position: absolute;
+}
+i.fas {
+  margin-right: 0.5rem;
+}
+.main {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 45px 40px;
+  width: 75%;
+}
+
+.card-img {
+  width: 125px;
+  height: 100%;
+  border-radius: 5px;
+  flex: 1;
+}
+.card-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-left: 20px;
+}
+.card-info .location {
+  font-size: 10.24px;
+  line-height: 12px;
+  letter-spacing: 0.17em;
+  margin-right: 12px;
+  margin-bottom: 7px;
+}
+.card-info .googleMapUrl {
+  font-size: 10.24px;
+  line-height: 12px;
+  text-decoration-line: underline;
+}
+.card-info .travel-date {
+  font-weight: bold;
+  font-size: 10.24px;
+  line-height: 12px;
+  margin-bottom: 10px;
+  margin-top: 7px;
+}
+.card-info p {
+  text-align: justify;
+  font-size: 15px;
+  line-height: 150%;
+}
+.card {
+  display: flex;
+  flex-direction: row;
+  margin: 8px auto;
+  padding: 16px 8px 32px;
+  justify-content: center;
+  border-bottom: 1px solid #f5f5f5;
+}
+@media screen and (max-width: 500px) {
+  .card {
+    flex-direction: column;
+    max-width: 100%;
+    margin: auto;
+  }
+
+  .card-image {
+    min-width: 100px;
+    height: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .card-info {
+    max-width: 100%;
+  }
+
+  .card-info .description {
+    max-width: 90%;
+  }
+}
